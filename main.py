@@ -36,7 +36,7 @@ for idx, encoded_image in enumerate(encoded_images):
 sorted_scores = sorted(similarity_scores, key=lambda x: x[0], reverse=True)
 
 # Create a new directory for sorted images
-output_dir = "basedOnImage"
+output_dir = "sorted_images"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
@@ -52,4 +52,4 @@ for idx, (score, image_id) in enumerate(sorted_scores):
     print(f"Rank {idx+1}: Score {score:.3f}")
     print(f"Image copied as: {new_name}")
 
-print("Images have been sorted, renamed, and copied to the 'basedOnImage' folder.")
+print("Images have been sorted, renamed, and copied to the 'sorted_images' folder.")
