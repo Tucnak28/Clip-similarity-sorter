@@ -2,8 +2,6 @@
 
 Sort your images by visual and semantic similarity using OpenAI's CLIP model.
 
-![preview](examples/example_output.png)
-
 ## Features
 - Uses `sentence-transformers` implementation of CLIP
 - Sorts images by similarity to a reference image
