@@ -43,7 +43,7 @@ if not os.path.exists(output_dir):
 # Copy the images to the new directory with names based on similarity score
 for idx, (score, image_id) in enumerate(sorted_scores):
     # Define the new filename based on the similarity score
-    score_str = f"{score:.3f}".replace('0.', '') #replace 0. with the score, being 1000 as the highest
+    score_str = f"{score:.3f}".replace('0.', '0,') #replace 0. with the score, being 1000 as the highest
     new_name = f"{score_str}_{os.path.basename(image_names[image_id])}"
     
     # Copy the image to the output directory with the new name
